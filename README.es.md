@@ -6,28 +6,28 @@
 ![Static Analysis](https://img.shields.io/badge/static%20analysis-PHPStan%20%2B%20Psalm-blue?style=flat-square)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/alxarafe/resource-pdo/issues)
 
-**Native PDO adapter for alxarafe/resource-controller.**
+**Adaptador nativo PDO para alxarafe/resource-controller.**
 
-Implements `RepositoryContract`, `QueryContract`, and `TransactionContract` using pure PHP PDO, without relying on ORMs or heavy database libraries.
+Implementa `RepositoryContract`, `QueryContract` y `TransactionContract` usando PHP PDO nativo, sin depender de ORMs ni librerías pesadas de base de datos.
 
-## Ecosystem
+## Ecosistema
 
-| Package | Purpose | Status |
+| Paquete | Propósito | Estado |
 |---|---|---|
-| **[resource-controller](https://github.com/alxarafe/resource-controller)** | Core CRUD engine + UI components | ✅ Stable |
-| **[resource-eloquent](https://github.com/alxarafe/resource-eloquent)** | Eloquent ORM adapter | ✅ Stable |
-| **[resource-pdo](https://github.com/alxarafe/resource-pdo)** | Native PDO adapter | ✅ Stable |
-| **[resource-blade](https://github.com/alxarafe/resource-blade)** | Blade template renderer adapter | ✅ Stable |
-| **[resource-twig](https://github.com/alxarafe/resource-twig)** | Twig template renderer adapter | ✅ Stable |
-| **[resource-html](https://github.com/alxarafe/resource-html)** | Pure PHP/HTML template renderer adapter | ✅ Stable |
+| **[resource-controller](https://github.com/alxarafe/resource-controller)** | Motor CRUD central + componentes UI | ✅ Estable |
+| **[resource-eloquent](https://github.com/alxarafe/resource-eloquent)** | Adaptador ORM Eloquent | ✅ Estable |
+| **[resource-pdo](https://github.com/alxarafe/resource-pdo)** | Adaptador nativo PDO | ✅ Estable |
+| **[resource-blade](https://github.com/alxarafe/resource-blade)** | Adaptador de renderizado con Blade | ✅ Estable |
+| **[resource-twig](https://github.com/alxarafe/resource-twig)** | Adaptador de renderizado con Twig | ✅ Estable |
+| **[resource-html](https://github.com/alxarafe/resource-html)** | Adaptador de renderizado con plantillas PHP/HTML | ✅ Estable |
 
-## Installation
+## Instalación
 
 ```bash
 composer require alxarafe/resource-pdo
 ```
 
-## Usage
+## Uso
 
 ```php
 use Alxarafe\ResourceController\AbstractResourceController;
@@ -56,12 +56,6 @@ class UsersController extends AbstractResourceController
 }
 ```
 
-## Features
-
-- Dependency-free database access using native PHP `\PDO`.
-- Fast, secure, and prepared statements out-of-the-box.
-- Seamless compatibility with `alxarafe/resource-controller` configuration array definitions.
-
-## License
+## Licencia
 
 GPL-3.0-or-later
