@@ -16,7 +16,7 @@
   "require": {
     "php": "^8.2",
     "ext-pdo": "*",
-    "alxarafe/resource-controller": "^0.1"
+    "alxarafe/resource-controller": "dev-main || ^0.1"
   },
   "autoload": {
     "psr-4": {
