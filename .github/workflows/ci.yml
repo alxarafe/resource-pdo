@@ -22,11 +22,11 @@ jobs:
       - name: Install Composer deps
         run: composer install --no-interaction --no-progress
 
-      - name: PHPCBF (autofix)
-        run: vendor/bin/phpcbf --standard=phpcs.xml src tests -s || true
+      - name: Run phpcbf (Code style auto-fixer)
+        run: vendor/bin/phpcbf --standard=phpcs.xml src -s || true
 
-      - name: PHPCS (lint)
-        run: vendor/bin/phpcs --standard=phpcs.xml src tests
+      - name: Run PHPCS (Code style check)
+        run: vendor/bin/phpcs --standard=phpcs.xml src
 
       - name: PHPStan
         run: vendor/bin/phpstan analyse src --memory-limit=1G
